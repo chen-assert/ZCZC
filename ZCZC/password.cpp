@@ -5,7 +5,7 @@ int check() {
 	printf("please entry now password:");
 #ifdef DEBUG
 	fp4 = fopen("..\\password.txt", "r");
-	printf("(debug:now password is");
+	printf("(debug:now password is ");
 	char c;
 	while (fscanf(fp4, "%c", &c) != EOF) {
 		printf("%c", c ^ 0x25);
